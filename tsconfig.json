@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es5",
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "inlineSourceMap": true,
+        "outDir": "dist",
+        "lib": [
+            "es2015",
+            "es6",
+            "DOM"
+        ]
+    },
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+        "./node_modules/@types"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings"
+    ],
+    "filesGlob": [
+        "**/*.ts",
+        "typings/main",
+        "typings/index.d.ts"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug test",
+            "program": "${workspaceRoot}/node_modules/jasmine/bin/jasmine",
+            "cwd": "${workspaceRoot}",
+            "sourceMaps": true,
+            "smartStep": true,
+            "preLaunchTask": "build",
+            "args": [
+                "--config=jasmine.json"
+            ],
+            "outFiles": [
+                "${workspaceRoot}/dist/test/*.js",
+                "${workspaceRoot}/dist/test/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug integration",
+            "program": "${workspaceRoot}/dist/integration/index.js",
+            "cwd": "${workspaceRoot}",
+            "sourceMaps": true,
+            "smartStep": true,
+            "preLaunchTask": "build",
+            "outFiles": [
+                "${workspaceRoot}/dist/integration/*.js",
+                "${workspaceRoot}/dist/integration/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug src",
+            "program": "${workspaceRoot}/dist/index.js",
+            "cwd": "${workspaceRoot}",
+            "smartStep": true,
+            "stopOnEntry": true,
+            "sourceMaps": true,
+            "preLaunchTask": "build",
+            "outFiles": [
+                "${workspaceRoot}/dist/*.js",
+                "${workspaceRoot}/dist/**/*.js"
+            ]
+        }
+    ]
+}
