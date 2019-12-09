@@ -3,7 +3,7 @@
 import fs = require('fs');
 
 const start = (): void => {
-    console.log(solve_dec_5_pt1());
+    console.log(solve_dec_4_pt1());
     // console.log(solve_dec_4_pt2());
 };
 
@@ -12,9 +12,9 @@ module.exports = {
 };
 
 
-const solve_dec_5_pt1 = () => {
+const solve_dec_4_pt1 = () => {
     try {
-        let data = fs.readFileSync('src/test.dec5.txt', 'utf8');
+        let data = fs.readFileSync('src/test.dec4.txt', 'utf8');
         const lines = data.split('\n');
 
         return 0;
@@ -25,9 +25,9 @@ const solve_dec_5_pt1 = () => {
 }
 
 
-const solve_dec_5_pt2 = () => {
+const solve_dec_4_pt2 = () => {
     try {
-        let data = fs.readFileSync('src/test.dec5.txt', 'utf8');
+        let data = fs.readFileSync('src/test.dec4.txt', 'utf8');
         const lines = data.split('\n');
 
         return 0;
