@@ -11,7 +11,7 @@
         "inlineSourceMap": true,
         "outDir": "dist",
         "lib": [
-            "es2015",
+            "es2017",
             "es6",
             "DOM"
         ]
