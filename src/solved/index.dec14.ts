@@ -66,7 +66,7 @@ const solve_dec_14_pt1 = () => {
     return -1;
 }
 
-// TODO: Peanut-butter spread excess leftovers
+// TODO: Peanut-butter spread excess leftovers?
 const reduceEquations = (inputs) => {
     // Combine all like elements in the array
     let combo = {};
